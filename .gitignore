@@ -1,0 +1,44 @@
+# Python: ambientes virtuais e arquivos temporários
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Configurações locais e segredos
+.env
+.env.*
+!.env.example
+
+# Dados RAW gerados pela ingestão (não versionar snapshots de execução)
+data/RAW/snapshots/
+data/RAW/manifest.json
+data/RAW/*.csv
+data/RAW/*.json
+
+# Bancos locais e backups
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.bak
+*.bacpac
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.temp
+
+# Configurações pessoais de editores e sistema
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Não ignorar arquivos .sql, .py, README, docs/images ou .pbix
+# Para compartilhar dados de exemplo, use uma pasta separada, como data/sample/.
